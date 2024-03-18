@@ -23,7 +23,7 @@ let laptopObj: Obj = {
 };
 console.log(laptopObj.describeLaptop());
 
-/////////////////// Question 17 ////////////////
+/////////////////// Question 47 ////////////////
 
 let arrayObj: Obj[] = [  {
     make: "lenovo",
@@ -58,7 +58,7 @@ console.log(obj3);
 
 
 
-/////////////////// Question 18 ////////////////
+/////////////////// Question 48 ////////////////
 
 let laptop1Prices :number[] = [12000,25000,15000]
 let laptop2Prices :number[] = [18000,22000,23000]
