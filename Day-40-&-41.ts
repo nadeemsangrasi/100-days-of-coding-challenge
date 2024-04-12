@@ -1,0 +1,66 @@
+// Question 118 Write a loop that logs numbers from 1 to 10 to the console.
+
+// Question 119 Create a while loop that logs "Hello, World!" 5 times.
+
+// Question 120 Use a for...of loop to iterate through an array of your favorite movies and log each one.
+
+// Question 121 Implement a for loop that counts from 1 to 10 but skips number 5 using the continue statement.
+
+// Question 122 Use a while loop to count down from 10 to 1 and breaks the loop when it reaches 5.
+
+// Question 123 Create a loop that iterates through a string and stops when it finds the first vowel.
+
+//////////////////// Question 118 //////////////
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+//////////////////// Question 119 //////////////
+let count: number = 0;
+while (count < 5) {
+  console.log("Hello, World!");
+  count++;
+}
+
+//////////////////// Question 120 //////////////
+const favoriteMovies: string[] = [
+  "Inception",
+  "The Matrix",
+  "Interstellar",
+  "The Prestige",
+];
+for (const movie of favoriteMovies) {
+  console.log(movie);
+}
+
+//////////////////// Question 121 //////////////
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+    continue;
+  }
+  console.log(i);
+}
+
+//////////////////// Question 122 //////////////
+let counter: number = 10;
+while (counter > 0) {
+  if (counter === 5) {
+    break;
+  }
+  console.log(counter);
+  counter--;
+}
+
+//////////////////// Question 123 //////////////
+function logUntilVowel(str: string): void {
+  const vowels = "aeiouAEIOU";
+  for (const char of str) {
+    if (vowels.includes(char)) {
+      console.log(`First vowel found: ${char}`);
+      break;
+    }
+    console.log(char);
+  }
+}
+
+logUntilVowel("syzygy");
